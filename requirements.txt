@@ -1,0 +1,14 @@
+dotenv~=0.9.9
+python-dotenv~=1.1.0
+pydantic~=2.11.5
+langchain-google-genai~=2.1.4
+langchain-openai~=0.3.18
+langchain-core~=0.3.61
+pandas~=2.2.3
+numpy
+loguru~=0.7.3
+SQLAlchemy~=2.0.41
+psycopg2-binary~=2.9.10
+prophet~=1.1.6
+fastapi~=0.115.12
+uvicorn~=0.34.2

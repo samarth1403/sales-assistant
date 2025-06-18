@@ -239,8 +239,7 @@ def answer_the_question(question : str ,db: Session = Depends(get_db), rdb: Sess
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error: {e}")
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # main()
     # insert_forcasting_data()
-    logger.info("Started main")
-    run("main:app", host="0.0.0.0", port=8085, reload=True)
+logger.info("Started main")

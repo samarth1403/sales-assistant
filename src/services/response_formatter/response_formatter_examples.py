@@ -10,9 +10,9 @@ response_formatter_examples = [
         "response": "There were 312 transactions in store E099 on May 12."
     },
     {
-        "question": "Average bill value in Forum Sujana Mall for February 2025?",
+        "question": "Average bill value in Forum Nikita Mall for February 2025?",
         "result": [{"avg": 654.32}],
-        "response": "The average bill value in Forum Sujana Mall for February 2025 was ₹654.32."
+        "response": "The average bill value in Forum Nikita Mall for February 2025 was ₹654.32."
     },
     {
         "question": "List total sales per month in Q1 2024",

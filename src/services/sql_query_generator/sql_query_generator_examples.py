@@ -1,10 +1,10 @@
 sql_query_generator_examples = [
     {
-        "question": "Show the forecasted sales for Forum Sujana Mall in the next 7 days",
+        "question": "Show the forecasted sales for Forum Nikita Mall in the next 7 days",
         "sql": """SELECT sales_forecast.date, sales_forecast.predicted, sales_forecast.predicted_lower, sales_forecast.predicted_upper
 FROM sales_forecast
 JOIN o_site ON sales_forecast.site_code = o_site.site_code
-WHERE o_site.site_name = 'Forum Sujana Mall'
+WHERE o_site.site_name = 'Forum Nikita Mall'
   AND o_site.is_deleted = 0
   AND o_site.is_active = 1
   AND sales_forecast.is_deleted = 0
@@ -21,11 +21,11 @@ WHERE sales_forecast.site_code = 'E099'
 ORDER BY sales_forecast.date ASC;""",
     },
     {
-        "question": "Predicted sales in SU-Hyd-Nexus Mall in Q3 2025",
+        "question": "Predicted sales in SP-Hyd-Nexus Mall in Q3 2025",
         "sql": """SELECT sales_forecast.date, sales_forecast.predicted, sales_forecast.predicted_lower, sales_forecast.predicted_upper
 FROM sales_forecast
 JOIN o_site ON sales_forecast.site_code = o_site.site_code
-WHERE o_site.site_name = 'SU-Hyd-Nexus Mall'
+WHERE o_site.site_name = 'SP-Hyd-Nexus Mall'
   AND o_site.is_deleted = 0
   AND o_site.is_active = 1
   AND sales_forecast.is_deleted = 0
@@ -42,11 +42,11 @@ WHERE sales_forecast.site_code = 'E099'
 ORDER BY sales_forecast.date ASC;""",
     },
     {
-        "question": "Forecasted sales for Forum Sujana Mall for this year",
+        "question": "Forecasted sales for Forum Nikita Mall for this year",
         "sql": """SELECT sales_forecast.date, sales_forecast.predicted, sales_forecast.predicted_lower, sales_forecast.predicted_upper
 FROM sales_forecast
 JOIN o_site ON sales_forecast.site_code = o_site.site_code
-WHERE o_site.site_name = 'Forum Sujana Mall'
+WHERE o_site.site_name = 'Forum Nikita Mall'
   AND o_site.is_deleted = 0
   AND o_site.is_active = 1
   AND sales_forecast.is_deleted = 0

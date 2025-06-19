@@ -1,18 +1,18 @@
 sql_forecasting_query_generator_examples = [
     {
-        "question": "Total sales in SU-Hyd-Nexus Mall last month",
+        "question": "Total sales in SP-Hyd-Nexus Mall last month",
         "sql": """SELECT SUM(amount)
 FROM sales_txn
 JOIN o_site ON sales_txn.store_code = o_site.site_code
-WHERE o_site.site_name = 'SU-Hyd-Nexus Mall'
+WHERE o_site.site_name = 'SP-Hyd-Nexus Mall'
   AND bill_time BETWEEN '2025-04-01 00:00:00' AND '2025-04-30 23:59:59';""",
     },
     {
-        "question": "What is the number of transactions in Forum Sujana Mall in Q1 2025?",
+        "question": "What is the number of transactions in Forum Nikita Mall in Q1 2025?",
         "sql": """SELECT COUNT(*)
 FROM sales_txn
 JOIN o_site ON sales_txn.store_code = o_site.site_code
-WHERE o_site.site_name = 'Forum Sujana Mall'
+WHERE o_site.site_name = 'Forum Nikita Mall'
   AND bill_time BETWEEN '2025-01-01 00:00:00' AND '2025-03-31 23:59:59';""",
     },
     {
@@ -23,11 +23,11 @@ WHERE store_code = 'E099'
   AND bill_time BETWEEN '2023-03-18 00:00:00' AND '2023-03-18 23:59:59';""",
     },
     {
-        "question": "Average sales amount for store Forum Sujana Mall with store code E099 last year",
+        "question": "Average sales amount for store Forum Nikita Mall with store code E099 last year",
         "sql": """SELECT AVG(amount)
 FROM sales_txn
 JOIN o_site ON sales_txn.store_code = o_site.store_code
-WHERE o_site.site_name = 'Forum Sujana Mall'
+WHERE o_site.site_name = 'Forum Nikita Mall'
   AND o_site.site_code = 'E099'
   AND bill_time BETWEEN '2024-01-01 00:00:00' AND '2024-12-31 23:59:59';""",
     },
